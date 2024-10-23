@@ -19,16 +19,10 @@ website:
         style: "floating"
         contents:
             - text: Home
-              file: index.md
-            - section: Quick Start
-              contents:
-                  - text: Getting Started
-                    file: quick-start/index.md
-                  - text: Installation
-                    file: quick-start/installation.md
+              file: "/index.md"
             - section: How-To Guides
               contents:
-                  - auto: "explanations/*"
+                  - auto: "howto/*"
             - section: Explanations
               contents:
                   - auto: "explanations/*"
