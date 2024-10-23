@@ -2,3 +2,6 @@
 /_site/
 .devenv/profile
 .devenv/run
+*.html.md
+/docs/
+/site_libs/

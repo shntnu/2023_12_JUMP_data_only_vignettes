@@ -53,5 +53,5 @@ format:
             light: flatly
             dark: darkly
         code-fold: false
-    ipynb:
-        default-image-extension: svg
+    # ipynb:
+    #     default-image-extension: svg
