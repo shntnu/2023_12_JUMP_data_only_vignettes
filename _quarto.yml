@@ -30,8 +30,6 @@ website:
               contents:
                   - auto: "reference/*"
             - section: Platforms
-              contents:
-                  - auto: "platforms/*"
             - section: Community
               contents:
                   - auto: "community/*"
