@@ -45,6 +45,10 @@ This collection comprises 4 datasets:
   - Set of 8 compounds per sample plate
   - [List of recommended controls](https://github.com/jump-cellpainting/JUMP-Target#positive-control-compounds)
 
+### Cell Painting Protocol
+
+The experiments used an optimized Cell Painting protocol, published in [Cimini et al. Nature Protocols 2023](https://pubmed.ncbi.nlm.nih.gov/37344608/), which builds upon the original [Bray et al. Nature Protocols](https://pubmed.ncbi.nlm.nih.gov/27560178/). For detailed implementation guidance, see the [Cell Painting wiki](https://broad.io/cellpaintingwiki).
+
 ## Available Components
 
 ### Principal Dataset Components
