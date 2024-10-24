@@ -16,13 +16,13 @@
 
 # %% [markdown]
 # A common question we aim to ask is "What other perturbations look like mine?" The easiest way to get the answer for this question is using our [browsable datasets](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_rr#quick-data-access). In this case we would like to use the 'Matches' databases, which provide cosines similarities between perturbations within a dataset, obtained from all-vs-all calculations.
-
+#
 # The limitation of this approach is that the size of JUMP results in two challenges:
 # - Calculating the distances across all pairs of perturbations is intractable for most computers without a GPU (Graphics Processing Unit).
 # - The  resultant similarity matrix is too big for web browser-based exploration, so we limit the browsable similarity dataset to tthe op 100 most correlated/anticorrelated pairs of perturbations.
-
+#
 # Despite the aforementioned problems, we provide the full matrix of perturbation distances in case it is of use to data analysts. You can find this and other datasets on [Zenodo](https://zenodo.org/records/13259495/latest). The data files of interest for this exercise are "{org,crispr}_cosinesim_full.parquet".
-
+#
 # The following analysis focuses on showcasing how to query one of these distance matrices to find all the distances between any given perturbation and all others. One use-case of this is testing how similar perturbation A and B are relative to perturbation C's similarity to A.
 # ---
 

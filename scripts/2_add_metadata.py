@@ -21,14 +21,14 @@
 import polars as pl
 from broad_babel.query import get_mapper
 
-# %% [markdown] Fetch profiles
+# %% Fetch profiles [markdown]
 # We will be using the CRISPR dataset specificed in our index csv.
 # %% Fetch the CRISPR dataset
 INDEX_FILE = "https://raw.githubusercontent.com/jump-cellpainting/datasets/50cd2ab93749ccbdb0919d3adf9277c14b6343dd/manifests/profile_index.csv"
 CRISPR_URL = pl.read_csv(INDEX_FILE).filter(pl.col("subset") == "crispr").item(0, "url")
 profiles = pl.scan_parquet(CRISPR_URL)
 print(profiles.collect_schema().names()[:6])
-# %% [markdown] Contents of a profile
+# %% Contents of a profile [markdown]
 #
 # For simplicity the contents of our processed profiles are minimal: "The profile origin" (source, plate and well) and the unique JUMP identifier for that perturbation. We will use broad-babel to further expand on this metadata, but for simplicity's sake let us sample subset of data.
 # %% Subset data
@@ -59,7 +59,7 @@ name_mapper = get_mapper(
     output_columns="JCP2022,standard_key",
 )
 name_mapper
-# %% [markdown] Fetch profiles and merge
+# %% Fetch profiles and merge [markdown]
 # To wrap up, we will fetch all the available profiles for these perturbations and use the mappers to add the missing metadata. We also select a few features to showcase how how selection can be performed in polars.
 # %% Filter profiles and merge metadata
 subsample_profiles = profiles.filter(

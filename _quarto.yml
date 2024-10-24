@@ -8,7 +8,7 @@ language:
     search-text-placeholder: Search
 
 website:
-    title: "JUMP documentation and examples"
+    title: "JUMP Hub"
     repo-url: https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes
     repo-actions: [edit, source, issue]
     reader-mode: true
@@ -19,13 +19,19 @@ website:
         style: "floating"
         contents:
             - text: Home
-              file: index.md
+              file: "index.md"
             - section: How-To Guides
               contents:
                   - auto: "howto/*"
             - section: Explanations
               contents:
                   - auto: "explanations/*"
+            - section: Reference
+              contents:
+                  - auto: "reference/*"
+            - section: Community
+              contents:
+                  - auto: "community/*"
         tools:
             - icon: github
               href: https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes
