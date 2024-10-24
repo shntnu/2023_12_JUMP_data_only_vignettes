@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JUMP documentation and examples - Query information of genes</title>
+<title>JUMP Hub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -114,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../howto/1_retrieve_profiles.html">How-To Guides</a></li><li class="breadcrumb-item"><a href="../howto/6_query_genes_externally.html">Query information of genes</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../explanations/data-structure.html">Explanations</a></li><li class="breadcrumb-item"><a href="../explanations/data-structure.html">Data Components Reference</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -129,7 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">JUMP documentation and examples</a> 
+      <a href="../">JUMP Hub</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -167,32 +133,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../howto/2_add_metadata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Incorporate metadata into profiles</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/3_calculate_activity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Calculate phenotypic activity</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/4_display_perturbation_images.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Plot all channels for one site</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/5_explore_distance_clusters.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Explore perturbation clusters</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/6_query_genes_externally.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Query information of genes</span></a>
+  <a href="../howto/data-loading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loading JUMP Data</span></a>
   </div>
 </li>
       </ul>
@@ -208,6 +150,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../explanations/data-structure.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Data Components Reference</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../explanations/dataset-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">JUMP Dataset Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../explanations/FAQ.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Frequently Asked Questions</span></a>
   </div>
@@ -220,8 +174,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../explanations/Resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Available resources</span></a>
+  <a href="../explanations/pipelines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computational Pipelines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Reference</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/metadata-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Metadata Guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Community</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/citing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citing the JUMP Resource</span></a>
   </div>
 </li>
       </ul>
@@ -236,149 +224,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#data-components-reference" id="toc-data-components-reference" class="nav-link active" data-scroll-target="#data-components-reference">Data Components Reference</a>
+  <ul class="collapse">
+  <li><a href="#data-organization" id="toc-data-organization" class="nav-link" data-scroll-target="#data-organization">Data Organization</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/howto/6_query_genes_externally.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/howto/6_query_genes_externally.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="6_query_genes_externally.ipynb" download="6_query_genes_externally.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/explanations/data-structure.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/explanations/data-structure.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data-structure.ipynb" download="data-structure.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../howto/1_retrieve_profiles.html">How-To Guides</a></li><li class="breadcrumb-item"><a href="../howto/6_query_genes_externally.html">Query information of genes</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Query information of genes</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This how-to focuses on linking gene names from the NCBI databases. Whilst not JUMP-specific, it is useful to fetch more information on perturbations that our analysis deem important without having to manually search them. We will use <a href="https://biopython.org/">Biopython</a>, this only explores a subset of the options, the full Entrez <a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">documentation</a>, which contains all the options, is a useful reference to bookmark. ## Procedure</p>
-<div id="1136cf88" class="cell" title="Imports" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> Bio <span class="im">import</span> Entrez</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> broad_babel.query <span class="im">import</span> get_mapper</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Downloading data from 'https://zenodo.org/records/12211976/files/babel.db' to file '/home/runner/.cache/pooch/2eaa6a2f4915f72d7100683f53982ed8-babel.db'.</code></pre>
-</div>
-</div>
-<p>We define the fields that we need and an email to provide to the server we will query.</p>
-<div id="8e78da4d" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Entrez.email <span class="op">=</span> <span class="st">"example@email.com"</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fields <span class="op">=</span> (</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Name"</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Description"</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Summary"</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"OtherDesignations"</span>,  <span class="co"># This gives us synonyms</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>As an example, we will use a set of genes that we found in a JUMP cluster.</p>
-<div id="2faafb72" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>genes <span class="op">=</span> (<span class="st">"CHRM4"</span>, <span class="st">"SCAPER"</span>, <span class="st">"GPR176"</span>, <span class="st">"LY6K"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Get a dictionary that maps Gene symbols to Entrez IDs</p>
-<div id="5320b54a" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ids <span class="op">=</span> get_mapper(</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    query<span class="op">=</span>genes,</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    input_column<span class="op">=</span><span class="st">"standard_key"</span>,</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    output_columns<span class="op">=</span><span class="st">"standard_key,NCBI_Gene_ID"</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch the summaries for these genes</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>entries <span class="op">=</span> []</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> id_ <span class="kw">in</span> ids.values():</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    stream <span class="op">=</span> Entrez.esummary(db<span class="op">=</span><span class="st">"gene"</span>, <span class="bu">id</span><span class="op">=</span>id_)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    record <span class="op">=</span> Entrez.read(stream)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    entries.append(</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        {k: record[<span class="st">"DocumentSummarySet"</span>][<span class="st">"DocumentSummary"</span>][<span class="dv">0</span>][k] <span class="cf">for</span> k <span class="kw">in</span> fields}</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="54715427" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the resultant information in a human-readable format</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="1b70bd89" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> pl.Config(fmt_str_lengths<span class="op">=</span><span class="dv">1000</span>):</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(pl.DataFrame(entries))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>shape: (4, 4)
-┌────────┬─────────────────────────────┬─────────────────────────────┬─────────────────────────────┐
-│ Name   ┆ Description                 ┆ Summary                     ┆ OtherDesignations           │
-│ ---    ┆ ---                         ┆ ---                         ┆ ---                         │
-│ str    ┆ str                         ┆ str                         ┆ str                         │
-╞════════╪═════════════════════════════╪═════════════════════════════╪═════════════════════════════╡
-│ GPR176 ┆ G protein-coupled receptor  ┆ Members of the G            ┆ G-protein coupled receptor  │
-│        ┆ 176                         ┆ protein-coupled receptor    ┆ 176|probable G-protein      │
-│        ┆                             ┆ family, such as GPR176, are ┆ coupled receptor 176        │
-│        ┆                             ┆ cell surface receptors      ┆                             │
-│        ┆                             ┆ involved in responses to    ┆                             │
-│        ┆                             ┆ hormones, growth factors,   ┆                             │
-│        ┆                             ┆ and neurotransmitters (Hata ┆                             │
-│        ┆                             ┆ et al., 1995 [PubMed        ┆                             │
-│        ┆                             ┆ 7893747]).[supplied by      ┆                             │
-│        ┆                             ┆ OMIM, Jul 2008]             ┆                             │
-│ CHRM4  ┆ cholinergic receptor        ┆ The muscarinic cholinergic  ┆ muscarinic acetylcholine    │
-│        ┆ muscarinic 4                ┆ receptors belong to a       ┆ receptor M4|acetylcholine   │
-│        ┆                             ┆ larger family of G          ┆ receptor, muscarinic 4      │
-│        ┆                             ┆ protein-coupled receptors.  ┆                             │
-│        ┆                             ┆ The functional diversity of ┆                             │
-│        ┆                             ┆ these receptors is defined  ┆                             │
-│        ┆                             ┆ by the binding of           ┆                             │
-│        ┆                             ┆ acetylcholine and includes  ┆                             │
-│        ┆                             ┆ cellular responses such as  ┆                             │
-│        ┆                             ┆ adenylate cyclase           ┆                             │
-│        ┆                             ┆ inhibition,                 ┆                             │
-│        ┆                             ┆ phosphoinositide            ┆                             │
-│        ┆                             ┆ degeneration, and potassium ┆                             │
-│        ┆                             ┆ channel mediation.          ┆                             │
-│        ┆                             ┆ Muscarinic receptors        ┆                             │
-│        ┆                             ┆ influence many effects of   ┆                             │
-│        ┆                             ┆ acetylcholine in the        ┆                             │
-│        ┆                             ┆ central and peripheral      ┆                             │
-│        ┆                             ┆ nervous system. The         ┆                             │
-│        ┆                             ┆ clinical implications of    ┆                             │
-│        ┆                             ┆ this receptor are unknown;  ┆                             │
-│        ┆                             ┆ however, mouse studies link ┆                             │
-│        ┆                             ┆ its function to adenylyl    ┆                             │
-│        ┆                             ┆ cyclase inhibition.         ┆                             │
-│        ┆                             ┆ [provided by RefSeq, Jul    ┆                             │
-│        ┆                             ┆ 2008]                       ┆                             │
-│ LY6K   ┆ lymphocyte antigen 6 family ┆ Predicted to be involved in ┆ lymphocyte antigen          │
-│        ┆ member K                    ┆ binding activity of sperm   ┆ 6K|cancer/testis antigen    │
-│        ┆                             ┆ to zona pellucida.          ┆ 97|lymphocyte antigen 6     │
-│        ┆                             ┆ Predicted to act upstream   ┆ complex, locus              │
-│        ┆                             ┆ of or within flagellated    ┆ K|up-regulated in lung      │
-│        ┆                             ┆ sperm motility. Predicted   ┆ cancer 10                   │
-│        ┆                             ┆ to be located in cell       ┆                             │
-│        ┆                             ┆ surface; cytoplasm; and     ┆                             │
-│        ┆                             ┆ plasma membrane. Predicted  ┆                             │
-│        ┆                             ┆ to be active in acrosomal   ┆                             │
-│        ┆                             ┆ vesicle. [provided by       ┆                             │
-│        ┆                             ┆ Alliance of Genome          ┆                             │
-│        ┆                             ┆ Resources, Apr 2022]        ┆                             │
-│ SCAPER ┆ S-phase cyclin A associated ┆ Predicted to enable nucleic ┆ S phase cyclin A-associated │
-│        ┆ protein in the ER           ┆ acid binding activity and   ┆ protein in the endoplasmic  │
-│        ┆                             ┆ zinc ion binding activity.  ┆ reticulum|zinc finger       │
-│        ┆                             ┆ Located in cytosol and      ┆ protein 291                 │
-│        ┆                             ┆ nuclear speck. [provided by ┆                             │
-│        ┆                             ┆ Alliance of Genome          ┆                             │
-│        ┆                             ┆ Resources, Apr 2022]        ┆                             │
-└────────┴─────────────────────────────┴─────────────────────────────┴─────────────────────────────┘</code></pre>
-</div>
-</div>
+<section id="data-components-reference" class="level1">
+<h1>Data Components Reference</h1>
+<section id="data-organization" class="level2">
+<h2 class="anchored" data-anchor-id="data-organization">Data Organization</h2>
+<p>Each dataset follows the Cell Painting Gallery structure:</p>
+<pre class="text"><code>cpg0016-jump/
+├── source_X/
+    ├── workspace/
+        ├── profiles/
+        ├── load_data_csv/
+        └── [other components]</code></pre>
+<p>TODO: Explain further</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -607,7 +480,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/broadinstitute\.github\.io\/2023_12_JUMP_data_only_vignettes\/");
+      var filterRegex = new RegExp("https:\/\/shntnu\.github\.io\/2023_12_JUMP_data_only_vignettes\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -940,4 +813,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/howto/6_query_genes_externally.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/howto/6_query_genes_externally.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/explanations/data-structure.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/explanations/data-structure.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

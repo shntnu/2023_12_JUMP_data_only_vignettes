@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JUMP documentation and examples - Incorporate metadata into profiles</title>
+<title>JUMP Hub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,7 +57,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -101,9 +101,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -117,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../howto/1_retrieve_profiles.html">How-To Guides</a></li><li class="breadcrumb-item"><a href="../howto/2_add_metadata.html">Incorporate metadata into profiles</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../howto/1_retrieve_profiles.html">How-To Guides</a></li><li class="breadcrumb-item"><a href="../howto/data-loading.html">Loading JUMP Data</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">JUMP documentation and examples</a> 
+      <a href="../">JUMP Hub</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -170,32 +167,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../howto/2_add_metadata.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Incorporate metadata into profiles</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/3_calculate_activity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Calculate phenotypic activity</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/4_display_perturbation_images.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Plot all channels for one site</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/5_explore_distance_clusters.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Explore perturbation clusters</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../howto/6_query_genes_externally.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Query information of genes</span></a>
+  <a href="../howto/data-loading.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Loading JUMP Data</span></a>
   </div>
 </li>
       </ul>
@@ -211,6 +184,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../explanations/data-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Components Reference</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../explanations/dataset-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">JUMP Dataset Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../explanations/FAQ.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Frequently Asked Questions</span></a>
   </div>
@@ -223,8 +208,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../explanations/Resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Available resources</span></a>
+  <a href="../explanations/pipelines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computational Pipelines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Reference</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/metadata-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Metadata Guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Community</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/citing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Citing the JUMP Resource</span></a>
   </div>
 </li>
       </ul>
@@ -235,288 +254,114 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="2_add_metadata.ipynb" download="2_add_metadata.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#loading-jump-data" id="toc-loading-jump-data" class="nav-link active" data-scroll-target="#loading-jump-data">Loading JUMP Data</a>
+  <ul class="collapse">
+  <li><a href="#basic-data-loading" id="toc-basic-data-loading" class="nav-link" data-scroll-target="#basic-data-loading">Basic Data Loading</a></li>
+  <li><a href="#loading-images" id="toc-loading-images" class="nav-link" data-scroll-target="#loading-images">Loading Images</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/howto/data-loading.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/howto/data-loading.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data-loading.ipynb" download="data-loading.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../howto/1_retrieve_profiles.html">How-To Guides</a></li><li class="breadcrumb-item"><a href="../howto/2_add_metadata.html">Incorporate metadata into profiles</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Incorporate metadata into profiles</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>A very common task when processing morphological profiles is knowing which ones are treatments and which ones are controls. Here we will explore how we can use broad-babel to accomplish this task.</p>
-<div id="9386e617" class="cell" title="Imports" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> broad_babel.query <span class="im">import</span> get_mapper</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>We will be using the CRISPR dataset specificed in our index csv.</p>
-<div id="88ff72f1" class="cell" title="Fetch the CRISPR dataset" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>INDEX_FILE <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/jump-cellpainting/datasets/50cd2ab93749ccbdb0919d3adf9277c14b6343dd/manifests/profile_index.csv"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>CRISPR_URL <span class="op">=</span> pl.read_csv(INDEX_FILE).<span class="bu">filter</span>(pl.col(<span class="st">"subset"</span>) <span class="op">==</span> <span class="st">"crispr"</span>).item(<span class="dv">0</span>, <span class="st">"url"</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>profiles <span class="op">=</span> pl.scan_parquet(CRISPR_URL)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(profiles.collect_schema().names()[:<span class="dv">6</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>['Metadata_Source', 'Metadata_Plate', 'Metadata_Well', 'Metadata_JCP2022', 'X_1', 'X_2']</code></pre>
-</div>
-</div>
-<p>For simplicity the contents of our processed profiles are minimal: “The profile origin” (source, plate and well) and the unique JUMP identifier for that perturbation. We will use broad-babel to further expand on this metadata, but for simplicity’s sake let us sample subset of data.</p>
-<div id="aedec47f" class="cell" title="Subset data" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>jcp_ids <span class="op">=</span> (</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    profiles.select(pl.col(<span class="st">"Metadata_JCP2022"</span>)).unique().collect().to_series().sort()</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>subsample <span class="op">=</span> jcp_ids.sample(<span class="dv">10</span>, seed<span class="op">=</span><span class="dv">42</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a well-known control</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>subsample <span class="op">=</span> (<span class="op">*</span>subsample, <span class="st">"JCP2022_800002"</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>subsample</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>('JCP2022_801270',
- 'JCP2022_802425',
- 'JCP2022_802356',
- 'JCP2022_805808',
- 'JCP2022_804300',
- 'JCP2022_801205',
- 'JCP2022_802539',
- 'JCP2022_803663',
- 'JCP2022_800116',
- 'JCP2022_801847',
- 'JCP2022_800002')</code></pre>
-</div>
-</div>
-<p>We will use these JUMP ids to obtain a mapper that indicates the perturbation type (trt, negcon or, rarely, poscon)</p>
-<div id="45d88068" class="cell" title="Pull mapper" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pert_mapper <span class="op">=</span> get_mapper(</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    subsample, input_column<span class="op">=</span><span class="st">"JCP2022"</span>, output_columns<span class="op">=</span><span class="st">"JCP2022,pert_type"</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>pert_mapper</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>{'JCP2022_800116': 'trt',
- 'JCP2022_805808': 'trt',
- 'JCP2022_802425': 'trt',
- 'JCP2022_803663': 'trt',
- 'JCP2022_802539': 'trt',
- 'JCP2022_801847': 'trt',
- 'JCP2022_800002': 'negcon',
- 'JCP2022_804300': 'trt',
- 'JCP2022_802356': 'trt',
- 'JCP2022_801270': 'trt',
- 'JCP2022_801205': 'trt'}</code></pre>
-</div>
-</div>
-<p>A couple of important notes about broad_babel’s get mapper and other functions: - these must be fed tuples, as these are cached and provide significant speed-ups for repeated calls - ‘get-mapper’ works for datasets for up to a few tens of thousands of samples. If you try to use it to get a mapper for the entirety of the ‘compounds’ dataset it is likely to fail. For these cases we suggest the more general function ‘run_query’. You can read more on this and other use-cases on Babel’s <a href="https://github.com/broadinstitute/monorepo/tree/main/libs/jump_babel">readme</a>.</p>
-<p>We will now repeat the process to get their ‘standard’ name</p>
-<div id="6e7e3783" class="cell" title="Fetch standard name" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>name_mapper <span class="op">=</span> get_mapper(</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    (<span class="op">*</span>subsample, <span class="st">"JCP2022_800002"</span>),</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    input_column<span class="op">=</span><span class="st">"JCP2022"</span>,</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    output_columns<span class="op">=</span><span class="st">"JCP2022,standard_key"</span>,</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>name_mapper</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
-<pre><code>{'JCP2022_803663': 'KIF16B',
- 'JCP2022_804300': 'MSX1',
- 'JCP2022_800002': 'non-targeting',
- 'JCP2022_805808': 'RAD51B',
- 'JCP2022_801847': 'DMRT2',
- 'JCP2022_802425': 'FLNC',
- 'JCP2022_802539': 'G6PC',
- 'JCP2022_801205': 'CDK20',
- 'JCP2022_800116': 'ACOT11',
- 'JCP2022_801270': 'CFB',
- 'JCP2022_802356': 'FDX1'}</code></pre>
-</div>
-</div>
-<p>To wrap up, we will fetch all the available profiles for these perturbations and use the mappers to add the missing metadata. We also select a few features to showcase how how selection can be performed in polars.</p>
-<div id="e9bd2583" class="cell" title="Filter profiles and merge metadata" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>subsample_profiles <span class="op">=</span> profiles.<span class="bu">filter</span>(</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    pl.col(<span class="st">"Metadata_JCP2022"</span>).is_in(subsample)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>).collect()</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>profiles_with_meta <span class="op">=</span> subsample_profiles.with_columns(</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    pl.col(<span class="st">"Metadata_JCP2022"</span>).replace(pert_mapper).alias(<span class="st">"pert_type"</span>),</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    pl.col(<span class="st">"Metadata_JCP2022"</span>).replace(name_mapper).alias(<span class="st">"name"</span>),</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>profiles_with_meta.select(</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    pl.col((<span class="st">"name"</span>, <span class="st">"pert_type"</span>, <span class="st">"^Metadata.*$"</span>, <span class="st">"^X_[0-3]$"</span>))</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>).sort(by<span class="op">=</span><span class="st">"pert_type"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<div>
-<div><style>
-.dataframe > thead > tr,
-.dataframe > tbody > tr {
-  text-align: right;
-  white-space: pre-wrap;
-}
-</style>
-<small>shape: (2_806, 9)</small>
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">name</th>
-<th data-quarto-table-cell-role="th">pert_type</th>
-<th data-quarto-table-cell-role="th">Metadata_Source</th>
-<th data-quarto-table-cell-role="th">Metadata_Plate</th>
-<th data-quarto-table-cell-role="th">Metadata_Well</th>
-<th data-quarto-table-cell-role="th">Metadata_JCP2022</th>
-<th data-quarto-table-cell-role="th">X_1</th>
-<th data-quarto-table-cell-role="th">X_2</th>
-<th data-quarto-table-cell-role="th">X_3</th>
-</tr>
-<tr class="odd">
-<th>str</th>
-<th>str</th>
-<th>str</th>
-<th>str</th>
-<th>str</th>
-<th>str</th>
-<th>f32</th>
-<th>f32</th>
-<th>f32</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>"non-targeting"</td>
-<td>"negcon"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R1-01"</td>
-<td>"A02"</td>
-<td>"JCP2022_800002"</td>
-<td>-0.223417</td>
-<td>-0.049487</td>
-<td>-0.826231</td>
-</tr>
-<tr class="even">
-<td>"non-targeting"</td>
-<td>"negcon"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R1-01"</td>
-<td>"L23"</td>
-<td>"JCP2022_800002"</td>
-<td>-0.079349</td>
-<td>-0.016958</td>
-<td>-0.277558</td>
-</tr>
-<tr class="odd">
-<td>"non-targeting"</td>
-<td>"negcon"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R1-01"</td>
-<td>"I23"</td>
-<td>"JCP2022_800002"</td>
-<td>-0.023832</td>
-<td>-0.00537</td>
-<td>-0.29832</td>
-</tr>
-<tr class="even">
-<td>"non-targeting"</td>
-<td>"negcon"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R1-01"</td>
-<td>"J02"</td>
-<td>"JCP2022_800002"</td>
-<td>-0.169491</td>
-<td>-0.023422</td>
-<td>-0.088187</td>
-</tr>
-<tr class="odd">
-<td>"non-targeting"</td>
-<td>"negcon"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R1-01"</td>
-<td>"O23"</td>
-<td>"JCP2022_800002"</td>
-<td>-0.295112</td>
-<td>-0.124241</td>
-<td>1.055193</td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="odd">
-<td>"CFB"</td>
-<td>"trt"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R5-19"</td>
-<td>"G12"</td>
-<td>"JCP2022_801270"</td>
-<td>0.023277</td>
-<td>0.021747</td>
-<td>-0.914867</td>
-</tr>
-<tr class="even">
-<td>"DMRT2"</td>
-<td>"trt"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R5-21"</td>
-<td>"C10"</td>
-<td>"JCP2022_801847"</td>
-<td>-0.208865</td>
-<td>-0.046884</td>
-<td>0.845933</td>
-</tr>
-<tr class="odd">
-<td>"MSX1"</td>
-<td>"trt"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R5-24"</td>
-<td>"C03"</td>
-<td>"JCP2022_804300"</td>
-<td>-0.003333</td>
-<td>0.053181</td>
-<td>0.078227</td>
-</tr>
-<tr class="even">
-<td>"CFB"</td>
-<td>"trt"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R6-19"</td>
-<td>"G12"</td>
-<td>"JCP2022_801270"</td>
-<td>0.18701</td>
-<td>0.072405</td>
-<td>0.381239</td>
-</tr>
-<tr class="odd">
-<td>"CFB"</td>
-<td>"trt"</td>
-<td>"source_13"</td>
-<td>"CP-CC9-R7-19"</td>
-<td>"G12"</td>
-<td>"JCP2022_801270"</td>
-<td>0.051818</td>
-<td>-0.129935</td>
-<td>-0.481606</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
+<section id="loading-jump-data" class="level1">
+<h1>Loading JUMP Data</h1>
+<section id="basic-data-loading" class="level2">
+<h2 class="anchored" data-anchor-id="basic-data-loading">Basic Data Loading</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load metadata</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>plates <span class="op">=</span> pd.read_csv(<span class="st">"metadata/plate.csv.gz"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>wells <span class="op">=</span> pd.read_csv(<span class="st">"metadata/well.csv.gz"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>compound <span class="op">=</span> pd.read_csv(<span class="st">"metadata/compound.csv.gz"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>orf <span class="op">=</span> pd.read_csv(<span class="st">"metadata/orf.csv.gz"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Configure profile paths</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>profile_formatter <span class="op">=</span> (</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"s3://cellpainting-gallery/cpg0016-jump/"</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"</span><span class="sc">{Metadata_Source}</span><span class="st">/workspace/profiles/"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"</span><span class="sc">{Metadata_Batch}</span><span class="st">/</span><span class="sc">{Metadata_Plate}</span><span class="st">/</span><span class="sc">{Metadata_Plate}</span><span class="st">.parquet"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Sample plates from each source</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>sample <span class="op">=</span> (</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    plates.query(<span class="st">'Metadata_PlateType=="TARGET2"'</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    .groupby(<span class="st">"Metadata_Source"</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    .sample(<span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Load profiles from sampled plates</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>dframes <span class="op">=</span> []</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>columns <span class="op">=</span> [</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Metadata_Source"</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Metadata_Plate"</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Metadata_Well"</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Cells_AreaShape_Eccentricity"</span>,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Nuclei_AreaShape_Area"</span>,</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> sample.iterrows():</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    s3_path <span class="op">=</span> profile_formatter.<span class="bu">format</span>(<span class="op">**</span>row.to_dict())</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    dframes.append(</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        pd.read_parquet(s3_path, storage_options<span class="op">=</span>{<span class="st">"anon"</span>: <span class="va">True</span>}, columns<span class="op">=</span>columns)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>dframes <span class="op">=</span> pd.concat(dframes)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Add metadata to profiles</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>metadata <span class="op">=</span> compound.merge(wells, on<span class="op">=</span><span class="st">"Metadata_JCP2022"</span>)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>ann_dframe <span class="op">=</span> metadata.merge(</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    dframes, on<span class="op">=</span>[<span class="st">"Metadata_Source"</span>, <span class="st">"Metadata_Plate"</span>, <span class="st">"Metadata_Well"</span>]</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="loading-images" class="level2">
+<h2 class="anchored" data-anchor-id="loading-images">Loading Images</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Configure image paths</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>loaddata_formatter <span class="op">=</span> (</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"s3://cellpainting-gallery/cpg0016-jump/"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"</span><span class="sc">{Metadata_Source}</span><span class="st">/workspace/load_data_csv/"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"</span><span class="sc">{Metadata_Batch}</span><span class="st">/</span><span class="sc">{Metadata_Plate}</span><span class="st">/load_data_with_illum.parquet"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Load image metadata</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>load_data <span class="op">=</span> []</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> sample.iterrows():</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    s3_path <span class="op">=</span> loaddata_formatter.<span class="bu">format</span>(<span class="op">**</span>row.to_dict())</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    load_data.append(pd.read_parquet(s3_path, storage_options<span class="op">=</span>{<span class="st">"anon"</span>: <span class="va">True</span>}))</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>load_data <span class="op">=</span> pd.concat(load_data)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Link profiles to images</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>sample_profile <span class="op">=</span> ann_dframe.sample(<span class="dv">1</span>, random_state<span class="op">=</span><span class="dv">22</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>sample_linked <span class="op">=</span> pd.merge(</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    load_data, sample_profile, on<span class="op">=</span>[<span class="st">"Metadata_Source"</span>, <span class="st">"Metadata_Plate"</span>, <span class="st">"Metadata_Well"</span>]</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Access image paths</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>image_paths <span class="op">=</span> sample_linked[[<span class="st">"Metadata_Well"</span>, <span class="st">"Metadata_Site"</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<ul>
+<li>Each well-level profile contains thousands of features (n=4762) averaged over cells</li>
+<li>Typical well contains a couple thousand cells</li>
+<li>TARGET2 plates are sentinel plates run in each batch</li>
+<li>Image files are stored as 5-channel TIFF files</li>
+</ul>
+<p>For more examples, see our <a href="../howto/">how-to guides</a>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -744,7 +589,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/broadinstitute\.github\.io\/2023_12_JUMP_data_only_vignettes\/");
+      var filterRegex = new RegExp("https:\/\/shntnu\.github\.io\/2023_12_JUMP_data_only_vignettes\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1077,4 +922,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/howto/2_add_metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/howto/2_add_metadata.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/howto/data-loading.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/howto/data-loading.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
