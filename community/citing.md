@@ -1,4 +1,3 @@
-
 # Citing the JUMP Resource
 
 All data is released under the CC0 1.0 Universal (CC0 1.0) license.

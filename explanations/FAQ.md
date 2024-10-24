@@ -1,27 +1,8 @@
-- [Frequently Asked Questions](#frequently-asked-questions)
-  - [Analyses](#analyses)
-    - [How can I reproduce an environment to explore JUMP data?](#how-can-i-reproduce-an-environment-to-explore-jump-data)
-  - [Data](#data)
-    - [Does JUMP contain X compound/gene?](#does-jump-contain-x-compoundgene)
-    - [Where are the datasets specification?](#where-are-the-datasets-specification)
-    - [Why are some images with corresponding images but no downstream analysis?](#why-are-some-images-with-corresponding-images-but-no-downstream-analysis)
-    - [Why do some perturbations have so many replicates](#why-do-some-perturbations-have-so-many-replicates)
-    - [How were the profiles created?](#how-were-the-profiles-created)
-    - [Do we we expect one JCP to have multiple targets?](#do-we-we-expect-one-jcp-to-have-multiple-targets)
-    - [Do JCPs within either the CRISPR or ORF share the same gene?](#do-jcps-within-either-the-crispr-or-orf-share-the-same-gene)
-    - [Web interfaces](#web-interfaces)
+# Frequently Asked Questions
 
 Frequently Asked Questions and links to their answers. They are grouped based on whether they pertain to data, libraries or analyses.
 
-<a id="Frequently-Asked-Questions"></a>
-
-# Frequently Asked Questions
-
-<a id="Analyses"></a>
-
 ## Analyses
-
-<a id="How-can-I-reproduce-an-environment-to-explore-JUMP-data"></a>
 
 ### How can I reproduce an environment to explore JUMP data?
 
@@ -31,41 +12,27 @@ Frequently Asked Questions and links to their answers. They are grouped based on
 pip install jump-deps
 ```
 
-<a id="Data"></a>
-
 ## Data
-
-<a id="Does-JUMP-contain-X-compound-gene"></a>
 
 ### Does JUMP contain X compound/gene?
 
 The easiest way to find out is querying your dataset using [this](https://broad.io/babel) web tool. Alternatively, you can explore the [metadata tables](https://github.com/jump-cellpainting/datasets/tree/main/metadata) on the datasets repository.
 
-<a id="Where-are-the-datasets-specification"></a>
-
 ### Where are the datasets specification?
 
 The main resource to understand the technicalities of the JUMP datasets collection and assembly is on this [repo](https://github.com/jump-cellpainting/datasets).
-
-<a id="Why-are-some-images-with-corresponding-images-but-no-downstream-analysis"></a>
 
 ### Why are some images with corresponding images but no downstream analysis?
 
 Some plates failed Quality Control (QC) but we kept them because they may be useful for developing QC methods.
 
-<a id="Why-do-some-perturbations-have-so-many-replicates"></a>
-
 ### Why do some perturbations have so many replicates
 
 Most plates contain 16 negative control wells, while some have as many as 28 wells. One replicate of four of the compound positive controls are added to wells O23, O24, P23 and P24. The remaining wells contain ORF treatments, with a single replicate of each per plate map and with five replicate plates produced per plate map ([issue](https://github.com/jump-cellpainting/megamap/issues/8#issuecomment-1413606031)).
 
-<a id="How-were-the-profiles-created"></a>
-
 ### How were the profiles created?
 
-We used snakemake and pycytominer to generate these. The details can be found in [this](https://github.com/broadinstitute/jump-profiling-recipe) repo.
-
-<a id="Do-we-we-expect-one-JCP-to-have-multiple-targets"></a>
+See [this page](../explanations/pipelines.md)
 
 ### Do we we expect one JCP to have multiple targets?
 
@@ -73,13 +40,9 @@ Yes, there will be many with multiple targets. For instance, `JCP2022_050797` (q
 
 Two were considered to be two different compounds because they had different names and `broad_sample` names. But after all the data cleanup steps, they ended up being the same. Hence two different entries.
 
-<a id="Do-JCPs-within-either-the-CRISPR-or-ORF-share-the-same-gene"></a>
-
 ### Do JCPs within either the CRISPR or ORF share the same gene?
 
 In CRISPR each JCP ID corresponds to a different gene. But in ORF there are sometimes multiple reagents targeting the same gene. In this case, we compute consensus profiles at the gene level (more info [here](https://github.com/jump-cellpainting/morphmap/issues/178)).
-
-<a id="Web-interfaces"></a>
 
 ### Web interfaces
 

@@ -15,7 +15,7 @@ Welcome to JUMP (Joint Undertaking for Morphological Profiling)! This guide will
 2. **Want to analyze data?**
    - **Local Setup**
      - Install dependencies: `pip install jump_deps` (Python 3.10 or 3.11)
-     - Follow our [how-to guides](../howto/) for common analyses
+     - Follow our [how-to guides](howto/) for common analyses
      - Access data directly from AWS S3
 
    - **Cloud Analysis**
@@ -24,13 +24,13 @@ Welcome to JUMP (Joint Undertaking for Morphological Profiling)! This guide will
 3. **Looking to build tools?**
    - Use our Python libraries in the [monorepo](https://github.com/broadinstitute/monorepo/tree/main)
    - Access the [metadata schema](https://github.com/jump-cellpainting/datasets/tree/main/metadata)
-   - Explore our [example notebooks](../howto/)
+   - Explore our [example notebooks](howto/)
 
 ## Dataset Overview
 
 - **Scale:**
   - 116k chemical perturbations
-  - >15k genetic perturbations
+  - \>15k genetic perturbations
   - Images from 12 centers
   - Multiple replicates per perturbation
 
@@ -47,11 +47,11 @@ Welcome to JUMP (Joint Undertaking for Morphological Profiling)! This guide will
   - Programmatic access
   - Terra workspace
 
-[Learn more about the dataset](../explanations/dataset-overview.md)
+[Learn more about the dataset](explanations/dataset-overview.md)
 
 ## Need Help?
 
-- Check our [FAQ](../explanations/FAQ.md)
-- Browse the [glossary](../explanations/glossary.md)
+- Check our [FAQ](explanations/FAQ.md)
+- Browse the [glossary](explanations/glossary.md)
 - Raise an [issue](https://github.com/jump-cellpainting/datasets/issues)
 - Subscribe to updates at [jump-cellpainting.broadinstitute.org/more-info](https://jump-cellpainting.broadinstitute.org/more-info)

@@ -19,7 +19,7 @@ website:
         style: "floating"
         contents:
             - text: Home
-              file: "/index.md"
+              file: "index.md"
             - section: How-To Guides
               contents:
                   - auto: "howto/*"
@@ -29,7 +29,6 @@ website:
             - section: Reference
               contents:
                   - auto: "reference/*"
-            - section: Platforms
             - section: Community
               contents:
                   - auto: "community/*"
@@ -45,5 +44,5 @@ format:
             light: flatly
             dark: darkly
         code-fold: false
-    # ipynb:
-    #     default-image-extension: svg
+    ipynb:
+        default-image-extension: svg

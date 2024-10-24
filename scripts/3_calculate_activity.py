@@ -24,7 +24,7 @@ import seaborn as sns
 from broad_babel.query import get_mapper
 from copairs.map import average_precision
 
-# %% [markdown] Fetch profiles
+# %% Fetch profiles [markdown]
 # We will be using the CRISPR dataset specificed in our index csv, but we will select a subset of perturbations and the controls present.
 # %% Fetch the CRISPR dataset
 INDEX_FILE = "https://raw.githubusercontent.com/jump-cellpainting/datasets/50cd2ab93749ccbdb0919d3adf9277c14b6343dd/manifests/profile_index.csv"
@@ -83,7 +83,7 @@ result = pl.DataFrame(
 result.head()
 # %% [markdown]
 # The result of copairs is a dataframe containing, in addition to the original metadata, the average precision with which perturbations were retrieved. Perturbations that look more similar to each other than to the negative controls in the plates present in the same plates will be higher. Perturbations that do not differentiate themselves against negative controls will be closer to zero.
-
+#
 # To wrap up we pull the standard gene symbol and plot the distribution of average precision.
 # %%
 name_mapper = get_mapper(
