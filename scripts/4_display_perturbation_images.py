@@ -79,7 +79,6 @@ def display_site(
     # Make images
     axes = plt.subplots(n_rows, n_cols, figsize=(2.6 * n_cols, 2.6 * n_rows))[1]
     axes = axes.ravel()
-    counter = 0
 
     channel_rgb = {
         "AGP": "#FF7F00",  # Orange

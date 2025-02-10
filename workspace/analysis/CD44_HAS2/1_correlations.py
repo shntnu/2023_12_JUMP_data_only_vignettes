@@ -18,7 +18,6 @@ Find correlations between CD44 and HAS2. Question inspired by Prof. Chonghui Che
 """
 
 from itertools import product
-from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
