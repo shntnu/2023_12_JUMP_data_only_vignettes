@@ -21,6 +21,8 @@ import numpy as np
 import polars as pl
 from jump_portrait.fetch import get_item_location_info, get_jump_image
 from matplotlib import pyplot as plt
+
+#
 # %% [markdown]
 # First, we need to get location information telling us where all images corresponding to a specific perturbation can be found. We will use the "get_item_location" function from jump_portrait for this.
 # Here we retrieve image locations for the "RAB30" gene:
@@ -36,6 +38,8 @@ cmpd_info_byjcp = get_item_location_info("JCP2022_011844", input_column="JCP2022
 
 print(cmpd_info_byinchi.shape)
 print(cmpd_info_byjcp.shape)
+
+
 # %% [markdown]
 # There are 34 sites corresponding to this compound.
 # We've written a function to display all channels for a specific image. Note that this is just one possible way to display images - we've included the function here so that you can modify it to suit your own needs.
@@ -45,7 +49,7 @@ def display_site(
     batch: str,
     plate: str,
     well: str,
-    site: str,
+    site: int,
     label: str,
     int_percentile: float,
 ) -> None:
@@ -78,11 +82,11 @@ def display_site(
     counter = 0
 
     channel_rgb = {
-        "AGP": "#FF7F00", # Orange
-        "DNA": "#0000FF", # Blue
-        "ER": "#00FF00", # Green
-        "Mito": "#FF0000", # Red
-        "RNA": "#FFFF00", # Yellow
+        "AGP": "#FF7F00",  # Orange
+        "DNA": "#0000FF",  # Blue
+        "ER": "#00FF00",  # Green
+        "Mito": "#FF0000",  # Red
+        "RNA": "#FFFF00",  # Yellow
     }
 
     for ax, (channel, rgb) in zip(axes, channel_rgb.items()):
@@ -124,10 +128,18 @@ def display_site(
 
     # show plot
     plt.tight_layout()
+
+
 # %% [markdown]
 # We can get the required location parameters from the location info that we retrieved earlier. Here we get parameters for the first site in the JCP compound results:
 # %%
-source, batch, plate, well, site, *rest = cmpd_info_byjcp.row(0)
+(
+    source,
+    batch,
+    plate,
+    well,
+    site,
+) = cmpd_info_byjcp.select(pl.col(f"Metadata_{x}" for x in ("Source", "Batch", "Plate", "Well", "Site"))).row(0)
 # %% [markdown]
 # Next, we define the label and make the plot:
 # %%
@@ -145,9 +157,9 @@ display_site(
 # %% [markdown]
 # Here, we plot one of the RAB30 ORF images:
 # %%
-source, batch, plate, well, site, *rest = gene_info.filter(
+source, batch, plate, well, site = gene_info.filter(
     pl.col("Metadata_PlateType") == "ORF"
-).row(0)
+).select(pl.col(f"Metadata_{x}" for x in ("Source", "Batch", "Plate", "Well", "Site"))).row(0)
 display_site(
     source,
     batch,
@@ -160,9 +172,9 @@ display_site(
 # %% [markdown]
 # And for CRISPR:
 # %%
-source, batch, plate, well, site, *rest = gene_info.filter(
+source, batch, plate, well, site = gene_info.filter(
     pl.col("Metadata_PlateType") == "CRISPR"
-).row(0)
+).select(pl.col(f"Metadata_{x}" for x in ("Source", "Batch", "Plate", "Well", "Site"))).row(0)
 display_site(
     source,
     batch,

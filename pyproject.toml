@@ -20,7 +20,7 @@ seaborn = "^0.13.2"
 biopython = "^1.84"
 broad-babel = ">=0.1.26"
 copairs = "^0.4.1"
-jump-portrait = "^0.0.26"
+jump-portrait = "^0.0.27"
 
 [tool.poetry.group.dev.dependencies]
 ipdb = "^0.13.13"

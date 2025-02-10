@@ -11,3 +11,4 @@ source_7 where the compounds were assayed at 0.625 uM (the goal being to assay s
 compounds at a low concentration in addition to the higher concentration used for most of data
 production). The positive control compounds in compound, ORF and CRISPR plates were assayed at 5
 uM. JUMP-Target-1-Compound and JUMP-Target-2-Compound plates were also assayed at 5 uM
+- Due to some plates having letters and numbers and others only numbers, be careful when loading multiple `load_data_csv`s. We treat all columns and strings to avoid any potential casting issue.

@@ -1509,13 +1509,13 @@ referencing = ">=0.31.0"
 
 [[package]]
 name = "jump-portrait"
-version = "0.0.26"
+version = "0.0.27"
 description = "Tools to fetch and visualize JUMP images"
 optional = false
 python-versions = "<3.12,>=3.10"
 files = [
-    {file = "jump_portrait-0.0.26-py3-none-any.whl", hash = "sha256:d75c8a40be9f0487a6c13efb7874c9fc9077c5e21ebff355b4eb66c9f81ca716"},
-    {file = "jump_portrait-0.0.26.tar.gz", hash = "sha256:b18fc797ba27f96f0a476bd9e2235e6f56f8418de80ff6e5e1432adbac6028bd"},
+    {file = "jump_portrait-0.0.27-py3-none-any.whl", hash = "sha256:3e422784f3530b3ad7423f9c887bcf3fc05217ee9aee0898df834fefc9b67fe5"},
+    {file = "jump_portrait-0.0.27.tar.gz", hash = "sha256:be990041866cff925cacd4f9f4736a4bcb478c75ecbf5e66a7374e69658dd918"},
 ]
 
 [package.dependencies]
@@ -4078,4 +4078,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "844fc6c47cc974283235b80f3f86d5b236385df05432a0c133f5deebddf52344"
+content-hash = "9e2984e163e1f3724404be0409a4e8637db089b71ed4b23e8bfa3750fb6f2076"
