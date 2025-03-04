@@ -1,6 +1,10 @@
 # JUMP hub
 
-Focal point for JUMP information and data analysis pipelines.
+Repository to generate the one-in-all resource for morphological profiling, specialized in data from JUMP Cell Painting. [Here](https://broadinstitute.github.io/jump_hub/) is the main website.
+
+This repository generates the website and also contains the dependencies to run the notebooks and ensure their correctness.
+
+## Notes
 
 Additionally, this repository can be used as a way to install essential dependencies for an exploratory analysis of JUMP morphological data.
 
