@@ -28,10 +28,6 @@ There are several no-code options for exploring JUMP data. These are very useful
 
 #### JUMPrr tools
 
-* What is the source and version of the replicability metrics displayed in Broad’s [JUMPrr tools](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_rr)?
-  
-  These two files ([ORF](https://github.com/jump-cellpainting/2024_Chandrasekaran_Morphmap/blob/c47ad6c953d70eb9e6c9b671c5fe6b2c82600cfc/03.retrieve-annotations/output/phenotypic-activity-wellpos_cc_var_mad_outlier_featselect_sphering_harmony.csv.gz) and [CRISPR](https://github.com/jump-cellpainting/2024_Chandrasekaran_Morphmap/blob/c47ad6c953d70eb9e6c9b671c5fe6b2c82600cfc/03.retrieve-annotations/output/phenotypic-activity-wellpos_cc_var_mad_outlier_featselect_sphering_harmony_PCA_corrected.csv.gz)) contain the mAP and corrected p values for replicate retrieval (phenotypic activity). They won't contain all ORF and CRISPR reagents because some of them were filtered out for QC reasons.
-  
 * X\_Feature: For each row, is the `Feature` value an average for all the cells in the `Metadata_image` using the listed `Mask`(region of the cell: Nucleus, Cell, or Cytoplasm)? Or is it associated with a single cell in that image?
   
   Any `Feature` is the average of all cells and all replicates (typically four in total) for the specific mask and feature.
@@ -42,8 +38,6 @@ There are several no-code options for exploring JUMP data. These are very useful
   - `Median` is the median feature across all (\~4) replicates. Each of these replicates' value was in turn the mean of all the sites and cells in a given well.
   
 * How do I perform a case-insensitive search?
-
-  - Replace the `=` operator with the `like` operator.
 
 #### Morpheus
 
