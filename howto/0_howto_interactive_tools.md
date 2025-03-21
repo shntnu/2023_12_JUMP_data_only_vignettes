@@ -19,11 +19,6 @@ There are several no-code options for exploring JUMP data. These are very useful
    - Search similarities among perturbations and more
    - Account creation required, but access is free
 
-4. **Spring Discovery JUMP-CP Portal** [here](https://www.springscience.com/jump-cp)
-        
-   - Data exploration interface includes plate views, single-cell phenotype classification tools, image browsing and more
-   - Account creation required, but access is free
-
 ### Usage
 
 #### JUMPrr tools
