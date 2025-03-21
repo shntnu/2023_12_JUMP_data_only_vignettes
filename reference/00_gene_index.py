@@ -17,7 +17,6 @@
 # # Available genes
 # Is my Gene in JUMP or other associated tables?
 
-
 # %%
 # | code-fold: true
 import polars as pl
