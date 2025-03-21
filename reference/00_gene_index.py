@@ -1,6 +1,5 @@
 #!/usr/bin/env jupyter
 # ---
-# title: Available genes
 # jupyter:
 #   jupytext:
 #     text_representation:
@@ -15,6 +14,7 @@
 # ---
 
 # %% [markdown]
+# # Available genes
 # Is my Gene in JUMP or other associated tables?
 
 
