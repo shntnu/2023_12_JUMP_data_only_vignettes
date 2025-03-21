@@ -12,7 +12,7 @@ What is the purpose of this website? To provide up-to-date info on everything JU
    
    - Use a web interface; no programming required:
      * [JUMPrr tools](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_rr#quick-data-access) by Carpenter–Singh Lab (Muñoz et al.) 
-     * [Morpheus](./howto/interactive_tools.md) by Broad Institute
+     * [Morpheus](./howto/0_howto_interactive_tools.md) by Broad Institute
      * [JUMP-CP Data Explorer](https://phenaid.ardigen.com/jumpcpexplorer/) by Ardigen 
 
    You can look up images for a sample, distinguishing features, most-similar genes or compounds, and more\! See the [Interactive Tools](./howto/0_howto_interactive_tools.md) page for instructions for these tools. 
