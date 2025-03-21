@@ -25,13 +25,11 @@ import polars as pl
 import pooch
 from itables import show
 
-# %%
-# | code-fold: true
 logger = pooch.get_logger()
 logger.setLevel("WARNING")
 latest_id = requests.get(
     "https://zenodo.org/api/records/15059555/versions/latest"
-).json()#["id"]
+).json()["id"]
 df = pl.read_csv(
     pooch.retrieve(
         f"https://zenodo.org/api/records/{latest_id}/files/table.csv/content",
