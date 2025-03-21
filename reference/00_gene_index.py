@@ -15,7 +15,7 @@
 
 # %% [markdown]
 # # Available genes
-# Is my Gene in JUMP or other associated tables?
+# Is my gene of interest in JUMP or other associated tables?
 
 # %%
 # | code-fold: true
