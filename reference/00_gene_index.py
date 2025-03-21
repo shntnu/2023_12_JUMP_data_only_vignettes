@@ -34,5 +34,3 @@ df = pl.read_csv(
     )
 )
 show(df, maxBytes=0)
-df = pl.read_csv(pooch.retrieve("https://zenodo.org/api/records/15059555/files/table.csv/content", known_hash  = "a082225c08a09f95fd6578dc7d2114aea772ff728f75314fc1350647e0ac949f"))
-show(df, maxBytes=0)
