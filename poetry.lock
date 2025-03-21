@@ -1385,6 +1385,31 @@ files = [
 arrow = ">=0.15.0"
 
 [[package]]
+name = "itables"
+version = "2.2.5"
+description = "Pandas and Polar DataFrames as interactive DataTables"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "itables-2.2.5-py3-none-any.whl", hash = "sha256:d0d33ce427c6c84d4063998650323eb65ccddb47a5505ef1ad3f563580dc101d"},
+    {file = "itables-2.2.5.tar.gz", hash = "sha256:838ed4783da0b6481b9062c362b8a331aa56f48d6c90e0f6dc76a0488a316049"},
+]
+
+[package.dependencies]
+ipython = "*"
+numpy = "*"
+pandas = "*"
+
+[package.extras]
+all = ["anywidget", "matplotlib", "polars", "pyarrow", "pytz", "traitlets", "world-bank-data"]
+dev = ["anywidget", "ipykernel", "jupyterlab", "jupytext", "matplotlib", "nbconvert", "polars", "pyarrow", "pytest", "pytest-cov", "pytz", "requests", "shiny", "traitlets", "watchfiles", "world-bank-data"]
+polars = ["polars", "pyarrow"]
+samples = ["pytz", "world-bank-data"]
+style = ["matplotlib"]
+test = ["anywidget", "ipykernel", "jupytext", "matplotlib", "nbconvert", "polars", "pyarrow", "pytest", "pytest-cov", "pytz", "requests", "shiny", "traitlets", "world-bank-data"]
+widget = ["anywidget", "traitlets"]
+
+[[package]]
 name = "jedi"
 version = "0.19.1"
 description = "An autocompletion tool for Python that can be used for text editors."
@@ -4078,4 +4103,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "9e2984e163e1f3724404be0409a4e8637db089b71ed4b23e8bfa3750fb6f2076"
+content-hash = "00d38e027aa54a4d474413f1076de84be7a29784b86a461e6e2b11a311d06d24"
