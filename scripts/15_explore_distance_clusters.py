@@ -43,7 +43,7 @@ import seaborn as sns
 latest_id = requests.get(
     "https://zenodo.org/api/records/15029005/versions/latest"
 ).json()["id"]
-istances = pl.scan_parquet(
+distances = pl.scan_parquet(
     f"https://zenodo.org/api/records/{latest_id}/files/crispr_cosinesim_full.parquet/content"
 )
 distances.head().collect()
