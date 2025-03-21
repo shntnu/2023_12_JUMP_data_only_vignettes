@@ -19,7 +19,7 @@
 #
 # The limitation of this approach is that the size of JUMP results in two challenges:
 # - Calculating the distances across all pairs of perturbations is intractable for most computers without a GPU (Graphics Processing Unit).
-# - The  resultant similarity matrix is too big for web browser-based exploration, so we limit the browsable similarity dataset to tthe op 100 most correlated/anticorrelated pairs of perturbations.
+# - The  resultant similarity matrix is too big for web browser-based exploration, so we limit the browsable similarity dataset to the top 100 most correlated/anticorrelated pairs of perturbations.
 #
 # Despite the aforementioned problems, we provide the full matrix of perturbation distances in case it is of use to data analysts. You can find this and other datasets on [Zenodo](https://zenodo.org/records/13259495/latest). The data files of interest for this exercise are "{org,crispr}_cosinesim_full.parquet".
 #
@@ -29,6 +29,7 @@
 # ---
 
 # %% Imports
+import requests
 from random import choices, seed
 
 import matplotlib.pyplot as plt
@@ -39,8 +40,11 @@ import seaborn as sns
 # We select the CRISPR dataset for this example. As with previous examples, this is a lazy-loaded data frame. This enables us to download very big datasets without worrying about whether or not they will fill into memory. In these datasets, the values range between 0 and 2, where 0 means that two profiles are the same, 1 means that they are orthogonal (completely uncorrelated) and 2 means that they are completely anticorrelated.
 
 # %%
-distances = pl.scan_parquet(
-    "https://zenodo.org/api/records/13259495/files/crispr_cosinesim_full.parquet/content"
+latest_id = requests.get(
+    "https://zenodo.org/api/records/15029005/versions/latest"
+).json()["id"]
+istances = pl.scan_parquet(
+    f"https://zenodo.org/api/records/{latest_id}/files/crispr_cosinesim_full.parquet/content"
 )
 distances.head().collect()
 
