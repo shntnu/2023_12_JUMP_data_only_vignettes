@@ -32,7 +32,9 @@ There are several no-code options for exploring JUMP data. These are very useful
   - `Statistic` is the probability of a given distribution (four replicates) to occur relative to their negative controls (in the four plates from which those replicates came; typically each replicate is in an independent plate).
   - `Median` is the median feature across all (\~4) replicates. Each of these replicates' value was in turn the mean of all the sites and cells in a given well.
   
-* How do I perform a case-insensitive search?
+* I have a compound and want to find the closest JUMP analog
+
+<iframe width="780" height="500" src="https://marimo.app/?slug=qpqzxd&mode=read&include-code=false&show-chrome=false&embed=true" title="PubChem to JUMP"></iframe>
 
 #### Morpheus
 
