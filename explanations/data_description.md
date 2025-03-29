@@ -150,6 +150,6 @@ Many of the processed datasets and manifest files can be found associated with t
 - Some wells/plates/sources excluded for quality control  
 - Within-modality matching generally reliable
 
-You can find more details [here](../quirks_details.md).
+You can find more details [here](./quirks_details.md).
 
 For the most current updates, subscribe to our [email list](https://jump-cellpainting.broadinstitute.org/more-info).  
