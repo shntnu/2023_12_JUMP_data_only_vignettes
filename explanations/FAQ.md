@@ -44,3 +44,6 @@ Sometimes, two compounds were given separate JCPs because they had different nam
 
 In CRISPR, each JCP ID corresponds to a different gene. But in ORF there are frequently multiple reagents representing the same gene. In this case, we compute consensus profiles at the gene level (more info [here](https://github.com/jump-cellpainting/morphmap/issues/178)).
 
+### What are the id's for negative controls?
+
+For the compounds dataset the only negative control is 'JCP2022_033924' (DMSO). You can find all controls in JUMP [here](https://lite.datasette.io/?url=https://zenodo.org/api/records/13255965/files/babel.db/content#/babel/babel?_filter_column=pert_type&_filter_op=contains&_filter_value=con&_sort=rowid).
