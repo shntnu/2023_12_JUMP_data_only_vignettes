@@ -22,8 +22,8 @@ jobs:
                   backtrace: full
 
             - name: Nix cache
-              uses: DeterminateSystems/magic-nix-cache-action@main
+              uses: DeterminateSystems/flakehub-cache-action@main
 
             - name: Build development environment and run code
               run: |
-                  nix develop . --impure --accept-flake-config --command bash tools/deploy.sh
+                  nix develop . --accept-flake-config --command bash tools/deploy.sh
