@@ -1,2 +1,7 @@
 /.quarto/
 /_site/
+.devenv/
+.venv/
+/docs/
+.claude/
+CLAUDE.md.local
