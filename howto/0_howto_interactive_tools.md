@@ -2,37 +2,46 @@
 
 There are several no-code options for exploring JUMP data. These are very useful for querying perturbations without needing experience in data analysis or programming. Detailed usage instructions are below this brief overview listing:
 
-1. **JUMPer tools** [here](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_rr)
+1. **JUMP Round-Robin (jump\_rr) tools**
    
-   - Type in your gene/compound of interest and retrieve a list of similar genes/compounds  
-   - Tools to browse images and inspect enriched features  
+   - Type in your gene/compound of interest and retrieve a list of similar genes/compounds
+   - Tools to browse images and inspect enriched features
+   - Visualize images of the perturbed cells
    - No account creation required
 
-2. **Morpheus** [here](https://software.broadinstitute.org/morpheus/)
+2. **Reference tools**
+   If you are not sure if your genes or compounds of interest are in JUMP, you can check it usingn one of our tools embedded on this website.
+   - **Gene availability**: Is my Gene in a JUMP (or JUMP-adjacent) dataset?
+   - **Compound availability**: Is my compound in JUMP? If not, what is the closest equivalent?
+   
+3. **Morpheus** 
 
    - Explore matrices of data and perform basic calculations
    - Explore heatmaps showing similarity among clustered samples 
    - No account creation required
+   
+4. **Ardigen phenAID JUMP-CP Explorer** 
 
-3. **Ardigen phenAID JUMP-CP Explorer** [here](https://phenaid.ardigen.com/jumpcpexplorer/)  
-
-   - Search similarities among perturbations and more
+   - Search similarities among perturbations and look at their images
    - Account creation required, but access is free
-
-### Usage
+   
+### Details and usage
 
 #### JUMPrr tools
+A collection of online tables to explore, visualize and compare perturbations and their effect in cells.
 
-* X\_Feature: For each row, is the `Feature` value an average for all the cells in the `Metadata_image` using the listed `Mask`(region of the cell: Nucleus, Cell, or Cytoplasm)? Or is it associated with a single cell in that image?
-  
-  Any `Feature` is the average of all cells and all replicates (typically four in total) for the specific mask and feature.
-  
-* How are `Statistic` and `Median` calculated for each row? 
-  
-  - `Statistic` is the probability of a given distribution (four replicates) to occur relative to their negative controls (in the four plates from which those replicates came; typically each replicate is in an independent plate).
-  - `Median` is the median feature across all (\~4) replicates. Each of these replicates' value was in turn the mean of all the sites and cells in a given well.
-  
-* I have a compound and want to find the closest JUMP analog
+ - We provide a step-by-step [tutorial](https://broadinstitute.github.io/jump_hub/howto/1_jumprr_steps.html)
+ - The tables links and a flow diagram are available in its GitHub repository
+ 
+#### Perturbation availability
+##### Gene availability
+ A table to query which genes are available in the JUMP datasets. It contains the JUMP dataset alongside others with data from genetic perturbations.
+ 
+ - [Link](https://broadinstitute.github.io/jump_hub/reference/00_gene_index.html) to the gene availability table
+ - [Tutorial and details](https://broadinstitute.github.io/jump_hub/howto/1_jumprr_steps.html#was-my-gene-tested-in-the-jump-collection-of-perturbations)
+ 
+##### Compound availability
+I have a compound and would like to find its JUMP id or its most similar equivalent.
 
 <iframe width="780" height="500" src="https://marimo.app/?slug=qpqzxd&mode=read&include-code=false&show-chrome=false&embed=true" title="PubChem to JUMP"></iframe>
 

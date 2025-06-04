@@ -125,7 +125,7 @@ Many of the processed datasets and manifest files can be found associated with t
 
 - [How-to guides](../howto/0_howto.md) provided  
 - APIs and libraries for programmatic access:  
-  - [cpgdata](https://github.com/broadinstitute/cpg/tree/main/cpgdata):   
+	- [cpgdata](https://github.com/broadinstitute/cpg/tree/main/cpgdata): Tool to generate index of the Cell Painting Gallery files, for faster querying of parquet files using database languages (such as SQL).
   - [jump-portrait](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_portrait): Fetch images using standard gene/compound names into a Python session or filesystem.  
   - [jump-babel](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_babel): Translate perturbation names and access very basic metadata.
 
