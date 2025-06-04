@@ -11,7 +11,7 @@ There are several no-code options for exploring JUMP data. These are very useful
 
 2. **Reference tools**
    If you are not sure if your genes or compounds of interest are in JUMP, you can check it usingn one of our tools embedded on this website.
-   - **Gene availability**: Is my Gene in a JUMP (or JUMP-adjacent) dataset?
+   - **Gene availability**: Is my gene in a JUMP (or JUMP-adjacent) dataset?
    - **Compound availability**: Is my compound in JUMP? If not, what is the closest equivalent?
    
 3. **Morpheus** 
