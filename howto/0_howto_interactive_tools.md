@@ -31,7 +31,7 @@ There are several no-code options for exploring JUMP data. These are very useful
 A collection of online tables to explore, visualize and compare perturbations and their effect in cells.
 
  - We provide a step-by-step [tutorial](https://broadinstitute.github.io/jump_hub/howto/1_jumprr_steps.html)
- - The tables links and a flow diagram are available in its GitHub repository
+ - Links to the tables are available on the [repository](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_rr#quick-data-access)
  
 #### Perturbation availability
 ##### Gene availability
