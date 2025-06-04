@@ -31,6 +31,7 @@ import polars as pl
 # - **`all`**: Combined dataset containing all perturbation types
 #
 # Each dataset is available in two versions:
+#
 # - **Standard**: Fully processed including batch correction
 # - **Interpretable**: Same processing but without batch correction steps (which involve transformations that lose the original feature space)
 #
