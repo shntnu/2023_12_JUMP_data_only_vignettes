@@ -27,11 +27,12 @@ There are several no-code options for exploring JUMP data. These are very useful
    
 ### Details and usage
 
-#### JUMPrr tools
-A collection of online tables to explore, visualize and compare perturbations and their effect in cells.
+#### JUMP\_rr tools
+A collection of online tables to explore, visualize and compare perturbations and their effect in cells. 
 
  - We provide a step-by-step [tutorial](https://broadinstitute.github.io/jump_hub/howto/1_jumprr_steps.html)
- - Links to the tables are available on [this](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_rr#quick-data-access) repository
+ - Links to the different tools are available on [this](https://github.com/broadinstitute/monorepo/tree/main/libs/jump_rr#quick-data-access) repository
+ - In addition to the Graphical User Interface, you can also query using SQL.
  
 #### Perturbation availability
 ##### Gene availability
