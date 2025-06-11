@@ -42,9 +42,9 @@ A collection of online tables to explore, visualize and compare perturbations an
  - [Tutorial and details](https://broadinstitute.github.io/jump_hub/howto/1_jumprr_steps.html#was-my-gene-tested-in-the-jump-collection-of-perturbations)
  
 ##### Compound availability
-I have a compound and would like to find its JUMP id or its most similar equivalent.
+A query tool to find the JUMP id or its most similar equivalent using an InChiKey or common name for a chemical.
 
-<iframe width="780" height="500" src="https://marimo.app/?slug=qpqzxd&mode=read&include-code=false&show-chrome=false&embed=true" title="PubChem to JUMP"></iframe>
+[Link](../reference/01_chemical_mapper.md)
 
 #### Morpheus
 
