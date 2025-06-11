@@ -38,13 +38,13 @@ A collection of online tables to explore, visualize and compare perturbations an
 ##### Gene availability
  A table to query which genes are available in the JUMP datasets. It contains the JUMP dataset alongside others with data from genetic perturbations.
  
- - [Link](https://broadinstitute.github.io/jump_hub/reference/00_gene_index.html) to the gene availability table
+ - [Link](../00_gene_index.md) to the gene availability table
  - [Tutorial and details](https://broadinstitute.github.io/jump_hub/howto/1_jumprr_steps.html#was-my-gene-tested-in-the-jump-collection-of-perturbations)
  
 ##### Compound availability
 A query tool to find the JUMP id or its most similar equivalent using an InChiKey or common name for a chemical.
 
-[Link](../reference/01_chemical_mapper.md)
+[Link](../reference/01_chemical_query.md)
 
 #### Morpheus
 
