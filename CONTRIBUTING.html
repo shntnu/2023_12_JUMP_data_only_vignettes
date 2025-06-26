@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JUMP documentation and examples</title>
+<title>contributing – JUMP documentation and examples</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -245,7 +280,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      JUMP documentation and examples
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -277,7 +314,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
@@ -443,15 +480,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#jump-cell-painting-hub" id="toc-jump-cell-painting-hub" class="nav-link active" data-scroll-target="#jump-cell-painting-hub">JUMP Cell Painting Hub</a>
+  <li><a href="#contributing-to-jump-hub" id="toc-contributing-to-jump-hub" class="nav-link active" data-scroll-target="#contributing-to-jump-hub">Contributing to JUMP Hub</a>
   <ul class="collapse">
-  <li><a href="#getting-started-with-jump" id="toc-getting-started-with-jump" class="nav-link" data-scroll-target="#getting-started-with-jump">Getting Started with JUMP</a></li>
-  <li><a href="#choose-your-own-path" id="toc-choose-your-own-path" class="nav-link" data-scroll-target="#choose-your-own-path">Choose Your Own Path</a></li>
-  <li><a href="#need-help-or-more-information" id="toc-need-help-or-more-information" class="nav-link" data-scroll-target="#need-help-or-more-information">Need help or more information?</a></li>
-  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#quick-start" id="toc-quick-start" class="nav-link" data-scroll-target="#quick-start">Quick Start</a>
+  <ul class="collapse">
+  <li><a href="#setup-development-environment" id="toc-setup-development-environment" class="nav-link" data-scroll-target="#setup-development-environment">Setup Development Environment</a></li>
+  <li><a href="#make-changes" id="toc-make-changes" class="nav-link" data-scroll-target="#make-changes">Make Changes</a></li>
+  </ul></li>
+  <li><a href="#deployment-process-automated" id="toc-deployment-process-automated" class="nav-link" data-scroll-target="#deployment-process-automated">Deployment Process (Automated)</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/index.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/index.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.ipynb" download="index.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/CONTRIBUTING.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/CONTRIBUTING.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="CONTRIBUTING.ipynb" download="CONTRIBUTING.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -460,47 +499,59 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="jump-cell-painting-hub" class="level1">
-<h1>JUMP Cell Painting Hub</h1>
-<p>JUMP (Joint Undertaking for Morphological Profiling) Cell Painting is an effort to produce data and resources to make use of <a href="https://jump-cellpainting.broadinstitute.org/cell-painting">Cell Painting</a> data. It is the result of years of work by the JUMP-CP <a href="https://jump-cellpainting.broadinstitute.org/partners">Consortium</a>.</p>
-<section id="getting-started-with-jump" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started-with-jump">Getting Started with JUMP</h2>
-<p>What is the purpose of this website? To provide up-to-date info on everything JUMP-related. We aim to minimize friction for developers, technical writers and biologists to produce and access novel insights and tools. We aim to make this the one-stop shop for the vast majority of JUMP questions, be it computational or biological.</p>
+<section id="contributing-to-jump-hub" class="level1">
+<h1>Contributing to JUMP Hub</h1>
+<section id="quick-start" class="level2">
+<h2 class="anchored" data-anchor-id="quick-start">Quick Start</h2>
+<section id="setup-development-environment" class="level3">
+<h3 class="anchored" data-anchor-id="setup-development-environment">Setup Development Environment</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clone the repo</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/broadinstitute/jump_hub.git</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> jump_hub</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 1: Use Nix (includes everything: Python, uv, Quarto)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">nix</span> develop <span class="at">--impure</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Type 'exit' to leave the Nix environment</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 2: Manual setup</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync <span class="at">--group</span> dev</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Also install Quarto: https://quarto.org/docs/get-started/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="choose-your-own-path" class="level2">
-<h2 class="anchored" data-anchor-id="choose-your-own-path">Choose Your Own Path</h2>
+<section id="make-changes" class="level3">
+<h3 class="anchored" data-anchor-id="make-changes">Make Changes</h3>
+<section id="for-documentation-most-common" class="level4">
+<h4 class="anchored" data-anchor-id="for-documentation-most-common">For Documentation (most common)</h4>
 <ol type="1">
-<li><p>Just exploring the data?</p>
-<ul>
-<li>Use a web interface; no programming required. You can look up images for a gene or compound, distinguishing features, most-similar genes or compounds, and more! See the <a href="./howto/notebooks/0_overview.html">Interactive Tools</a> page for instructions for these tools.</li>
-</ul></li>
-<li><p>Want to fetch and analyze data?</p>
-<ul>
-<li>Follow our <a href="./howto/notebooks/0_overview.html">how-to guides</a> for common analyses</li>
-</ul></li>
-<li><p>Looking to build tools?</p>
-<ul>
-<li>Use our Python libraries <a href="https://github.com/afermg/cp_measure">cp_measure</a>, <a href="https://github.com/broadinstitute/cpg/tree/main/cpgdata">cpgdata</a>, <a href="https://github.com/broadinstitute/monorepo/tree/main/libs/jump_portrait">jump-portrait</a>, <a href="https://github.com/broadinstitute/monorepo/tree/main/libs/jump_babel">jump-babel</a> and other libraries in the <a href="https://github.com/broadinstitute/monorepo/tree/main">monorepo</a></li>
-<li>Access the <a href="https://github.com/jump-cellpainting/datasets/tree/main/metadata">metadata schema</a></li>
-</ul></li>
+<li><strong>Edit markdown files</strong> in <code>explanations/</code>, <code>howto/</code>, or <code>reference/</code></li>
+<li><strong>Preview changes</strong>: <code>quarto preview</code></li>
+<li><strong>Check rendering</strong>: Navigate to your changed pages in the preview</li>
 </ol>
 </section>
-<section id="need-help-or-more-information" class="level2">
-<h2 class="anchored" data-anchor-id="need-help-or-more-information">Need help or more information?</h2>
-<ul>
-<li>Read the papers creating the datasets for experimental and analysis details:
-<ul>
-<li><a href="https://www.nature.com/articles/s41592-024-02241-6">CPJUMP1</a></li>
-<li><a href="https://www.biorxiv.org/content/10.1101/2023.03.23.534023">JUMP data production biorxiv</a></li>
-<li><a href="https://www.biorxiv.org/content/10.1101/2024.12.02.624527">Morphmap</a></li>
-</ul></li>
-<li>Raise an issue or ask a question on <a href="https://github.com/jump-cellpainting/datasets/issues">Github</a></li>
-<li>Subscribe to (very infrequent) updates at <a href="https://jump-cellpainting.broadinstitute.org/more-info">jump-cellpainting.broadinstitute.org/more-info</a></li>
-</ul>
+<section id="for-code-tutorials" class="level4">
+<h4 class="anchored" data-anchor-id="for-code-tutorials">For Code Tutorials</h4>
+<ol type="1">
+<li><strong>Edit Python scripts</strong> in <code>scripts/</code> (these use Jupytext percent format with <code># %%</code> markers)</li>
+<li><strong>Test your script runs</strong>: <code>uv run python scripts/your_tutorial.py</code></li>
+<li><strong>Preview website</strong>: <code>quarto preview</code> (Quarto can render .py files directly)</li>
+</ol>
+<p><strong>Important</strong>: DO NOT generate .ipynb files locally - they are created automatically during deployment</p>
 </section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>This resource was developed by <a href="https://github.com/afermg">Alan F. Muñoz</a></p>
+</section>
+</section>
+<section id="deployment-process-automated" class="level2">
+<h2 class="anchored" data-anchor-id="deployment-process-automated">Deployment Process (Automated)</h2>
+<p>When changes are merged to <code>main</code>, GitHub Actions automatically:</p>
+<ol type="1">
+<li><strong>Converts Python scripts to notebooks</strong>: Using Jupytext, all scripts in <code>scripts/</code> are converted to Jupyter notebooks</li>
+<li><strong>Builds and publishes website</strong>: Quarto renders all content and publishes to GitHub Pages (<code>gh-pages</code> branch)</li>
+<li><strong>Creates Google Colab versions</strong>:
+<ul>
+<li>Notebooks from the built site are copied</li>
+<li>A <code>!pip install jump_deps</code> cell is inserted at the beginning of each notebook</li>
+<li>These are pushed to the <code>colab</code> branch for easy Google Colab access</li>
+</ul></li>
+</ol>
+<p>This process is handled by: - <code>.github/workflows/build_website.yml</code> - Triggers on push to main - <code>tools/deploy.sh</code> - Orchestrates the conversion, build, and Colab generation - <code>tools/insert_colab_cell.py</code> - Adds dependency installation to Colab notebooks</p>
 
 
 </section>
@@ -924,4 +975,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/index.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/index.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/edit/main/CONTRIBUTING.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/blob/main/CONTRIBUTING.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/broadinstitute/2023_12_JUMP_data_only_vignettes/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

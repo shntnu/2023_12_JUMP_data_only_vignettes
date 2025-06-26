@@ -1,47 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/community/citing.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/howto/interactive/1_jumprr_steps.html</loc>
+    <lastmod>2025-06-26T17:20:49.381Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/explanations/glossary.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/howto/notebooks/14_display_perturbation_images.html</loc>
+    <lastmod>2025-06-26T17:21:40.772Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/explanations/dataset-overview.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/howto/notebooks/11_retrieve_profiles.html</loc>
+    <lastmod>2025-06-26T17:21:39.228Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/reference/metadata-guide.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/howto/notebooks/15_explore_distance_clusters.html</loc>
+    <lastmod>2025-06-26T17:21:41.253Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/index.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/howto/notebooks/13_calculate_activity.html</loc>
+    <lastmod>2025-06-26T17:21:40.252Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/howto/data-loading.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/index.html</loc>
+    <lastmod>2025-06-26T17:20:49.381Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/howto/1_retrieve_profiles.html</loc>
-    <lastmod>2024-10-25T01:13:26.920Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/reference/01_chemical_query.html</loc>
+    <lastmod>2025-06-26T17:20:49.381Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/readme.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/reference/computational_pipelines.html</loc>
+    <lastmod>2025-06-26T17:20:49.381Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/explanations/FAQ.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/explanations/known_issues.html</loc>
+    <lastmod>2025-06-26T17:20:49.380Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/explanations/data-structure.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/explanations/data_description.html</loc>
+    <lastmod>2025-06-26T17:20:49.380Z</lastmod>
   </url>
   <url>
-    <loc>https://shntnu.github.io/2023_12_JUMP_data_only_vignettes/explanations/pipelines.html</loc>
-    <lastmod>2024-10-25T01:12:11.288Z</lastmod>
+    <loc>https://shntnu.github.io/jump_hub/cite.html</loc>
+    <lastmod>2025-06-26T17:20:49.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/explanations/FAQ.html</loc>
+    <lastmod>2025-06-26T17:20:49.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/explanations/quirks_details.html</loc>
+    <lastmod>2025-06-26T17:20:49.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/readme.html</loc>
+    <lastmod>2025-06-26T17:20:49.381Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/reference/glossary.html</loc>
+    <lastmod>2025-06-26T17:20:49.382Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/reference/00_gene_index.html</loc>
+    <lastmod>2025-06-26T17:21:42.756Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/CONTRIBUTING.html</loc>
+    <lastmod>2025-06-26T17:20:49.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/howto/notebooks/12_add_metadata.html</loc>
+    <lastmod>2025-06-26T17:21:39.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/howto/notebooks/0_overview.html</loc>
+    <lastmod>2025-06-26T17:20:49.381Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/howto/notebooks/16_query_genes_externally.html</loc>
+    <lastmod>2025-06-26T17:21:41.758Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shntnu.github.io/jump_hub/howto/interactive/0_overview.html</loc>
+    <lastmod>2025-06-26T17:20:49.381Z</lastmod>
   </url>
 </urlset>
